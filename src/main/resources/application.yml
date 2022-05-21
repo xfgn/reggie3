@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reggie
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  main:
+    allow-circular-references: true
+  mail:
+    host: smtp.163.com
+    username: 17736225781@163.com
+    password: GUKPREVCMHGPZKYK
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    use-actual-param-name: true
+
+reggie:
+  picPath: D:\java\reggie\src\main\resources\static\backend\images\pic
